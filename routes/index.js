@@ -26,7 +26,7 @@ router.get('/app', function(req, res, next) {
         res.json(data.toString()); // results in 'hello world!' 
         reader.close();
     });
-});
+}); 
  
   //res.render('index', { title: 'Express' });
 });
