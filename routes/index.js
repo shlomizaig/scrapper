@@ -13,7 +13,7 @@ store.app({id: id}).then(res.json).catch(res.json);
  }catch(o){res.json({error:o});} //res.json({"id":id});
 }*/
 
-
+//new
 /* GET home page. */
 router.get('/app', function(req, res, next) {
   var reqParam = req.query.id || 'com.zynga.livepoker' ;

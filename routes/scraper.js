@@ -25,7 +25,7 @@ function online(req,res)
         console.log("Got an error: ", e);
     });
 }
-
+//new
 var stt={};
 function stats(obj)
 {
