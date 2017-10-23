@@ -1,10 +1,12 @@
 var express = require('express');
 var router = express.Router();
+
+
 //var gplay = require('google-play-scraper');
 var readable = require('constant-db').readable;
 var store = require('app-store-scraper');
 var scraper = require ('./scraper');
-
+var rtb = require('./rtb');
 /*function appStoreScrape(id,res)
 {
   
@@ -40,5 +42,16 @@ router.get('/rebuild',function(req, res, next){
   return scraper.rebuild(req,res);
 });
 
+
+router.get('/test',function(req,res,next){
+  return res.render("index");
+})
+
+router.post('/rtb', function(req, res, next) {
+   return rtb.getRTBJson(res,req);
+});
+
 module.exports = router;
+
+ 
 
