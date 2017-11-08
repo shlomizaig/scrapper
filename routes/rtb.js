@@ -7,7 +7,7 @@ function getRTBJson(res,req)
    console.log("request",req.body);
    dortb(res,req,function(data){
        res.json(data);
-       console.log("reply");
+       console.log("reply",data);
    })
   
 };
